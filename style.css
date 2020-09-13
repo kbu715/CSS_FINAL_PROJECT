@@ -47,55 +47,103 @@ p {
     color: #2b292d;
 }
 
-.landing {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 320px;
-    height: 568px;
-    text-align: center;
-    background-color: #FDDED8;
-    display: flex;
-    flex-direction: column;
+.fill-button {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-}
-.landing h1 {
-    font-size: 40px;
-    letter-spacing: -0.05em;
-    margin-bottom: 15px;
-}
-
-.landing p {
-    margin-bottom: 15px;
-}
-.buttons {
-    width: 268px;
-    height: 48px;
-    display: flex;
-}
-
-.buttons button {
     width: 140px;
     height: 48px;
-    margin: 0 5px;
-    border-style: none;
-}
-
-.buttons #btn1 {
+    border-radius: 2px;
     background-color: #3040C4;
     color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+    transition: opacity 300ms ease-in-out;
 }
-.buttons #btn2 {
+
+.fill-button:hover {
+    opacity: 0.7;
+
+}
+
+.fill-button.inverted {
     background-color: #fff;
     color: #3040C4;
 }
+
+/* Landing */
+.landing {
+    background-color: #FDDED8;
+    text-align: center;
+}
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.landing-title {
+    letter-spacing: -0.05em;
+    font-size: 40px;
+    color: #2b292d;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.landing-desc {
+    margin-bottom: 20px;
+}
+
+.landing .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .button-group .fill-button:first-child {
+    margin-right: 8px;
+}
+
+
 /* >= 768px (Desktop) */
 @media screen and (min-width:768px) {
     /* Reset CSS */
     p {
         font-size: 22px;
         line-height: 1.36363636;
+    }
+
+
+    /* Landing */
+    .landing-title {
+        font-size: 70px;
+        line-height: 1.0285714286;
+        margin-bottom: 32px;
+    }
+
+
+    .landing-desc {
+        margin-bottom: 32px;
+    }
+
+    .landing .button-group .fill-button:first-child {
+        margin-right: 16px;
+    }
+
+
+    .fill-button {
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+        line-height:1.555555556 ;
+    }
+
+    .landing-content {
+        height: auto;
+        padding: 120px 0;
     }
 }
 
