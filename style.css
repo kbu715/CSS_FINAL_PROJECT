@@ -53,6 +53,7 @@ p {
     align-items: center;
     width: 140px;
     height: 48px;
+    border: none;
     border-radius: 2px;
     background-color: #3040C4;
     color: #fff;
@@ -204,7 +205,7 @@ p {
 /* Curriculum */
 
 .curriculum {
-    background-color: #f4f5f7;
+    background-color: #fff;
 }
 
 .curriculum .row:first-child {
@@ -233,6 +234,78 @@ p {
     color: #2b292d;
     letter-spacing: -0.01em;
 }
+
+
+/* Subscription */
+
+.subscription {
+    background-color: #f2f8fa;
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+.subscription-image {
+    padding: 25px 0;
+}
+
+.subscription-image img{
+    display: block;
+    width: auto;
+    height: 190px;
+    margin: 0 auto;
+}
+
+
+.subscription-title {
+    font-size: 32px;
+    line-height: 1;
+    color: #2b292d;
+    letter-spacing: -0.05em;
+    margin-bottom: 16px;
+}
+
+.subscription-desc {
+    margin-bottom: 24px;
+}
+
+.subscription .input-group {
+    margin-bottom: 8px;
+}
+
+
+.subscription .input-group input {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 8px;
+}
+
+
+.subscription .input-group .fill-button {
+    width: 100%;
+}
+
+
+
+.subscription-form .form-notice a {
+    text-decoration: underline;
+    color: #3040c4;
+}
+
+
+.subscription-form .form-notice {
+    font-size: 13px;
+    line-height: 1.5384615385;
+    letter-spacing: 0;
+    color: #7b7b7e;
+}
+
+
+ 
 
 /* >= 768px (Desktop) */
 @media screen and (min-width:768px) {
