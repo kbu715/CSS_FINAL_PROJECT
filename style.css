@@ -424,10 +424,59 @@ p {
         font-size: 18px;
         line-height: 1.444444444;
     }
+
+
+
+    /* Subscription */
+
+    .subscription {
+        text-align: left;
+        padding: 80px 0;
+    }
+
+    .subscription-image {
+        padding: 8px 0;
+    }
+
+    .subscription-image img {
+        height: 285px;
+        margin-left: 0;
+    }
+
+    .subscription-title {
+        font-size: 40px;
+    }
+
+    .subscription .input-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+
+    .subscription .input-group input {
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.333333333;
+        margin-bottom: 0;
+        margin-right: 8px;
+    }
+
+    .subscription .input-group .fill-button {
+        flex-shrink: 0; 
+        width: 160px;
+    }
+
+    .subscription-form .form-notice {
+        font-size: 14px;
+        line-height: 1.7142857143;
+
+    }
 }
 
-
-
+/*     flex-grow // flex-shrink */
+/* flex-grow에 양의 정수를 주면 남은 부분을 채워주는
+flx-shrink에 양의 정수를 주면 남은 부분에 맞춰서 줄여주는
+0을 주면 false 역할을 해서 절대 늘지도 줄지도 않는 본인 크기대로 가만히 있는다. */
 
 /* Custom Grid System - Fix Container Width */
 
