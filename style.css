@@ -305,6 +305,28 @@ p {
 }
 
 
+
+/* Footer */
+
+.footer {
+    padding: 24px 0;
+}
+
+.footer-link {
+    margin-bottom: 8px;   
+}
+
+.footer-link:last-child {
+    margin-bottom: 0;
+}
+
+.footer-link a{
+    font-size: 14px;
+    line-height: 1.7142857143;
+    color: #807f81;
+}
+
+
  
 
 /* >= 768px (Desktop) */
@@ -471,12 +493,36 @@ p {
         line-height: 1.7142857143;
 
     }
-}
-
-/*     flex-grow // flex-shrink */
+    /*     flex-grow // flex-shrink */
 /* flex-grow에 양의 정수를 주면 남은 부분을 채워주는
 flx-shrink에 양의 정수를 주면 남은 부분에 맞춰서 줄여주는
 0을 주면 false 역할을 해서 절대 늘지도 줄지도 않는 본인 크기대로 가만히 있는다. */
+
+
+    /* Footer */
+
+    .footer {
+        padding: 16px 0;
+    }
+
+    .footer-link {
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+
+    .footer-link:last-child {
+        margin-right: 0;
+    }
+
+    .footer-links {
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+
 
 /* Custom Grid System - Fix Container Width */
 
